@@ -1,0 +1,5 @@
+FROM bellsoft/liberica-openjdk-alpine:latest
+COPY ./src ./src
+RUN mkdir ./out
+RUN javac -sourcepath ./src -d ./out src/ru/gb/lesson_java_core_1/main/Main.java
+CMD java -classpath ./out ru.gb.lesson_java_core_1.main.Main
