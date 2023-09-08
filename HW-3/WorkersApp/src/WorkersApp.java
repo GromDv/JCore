@@ -24,12 +24,12 @@ public class WorkersApp {
         }
         System.out.println();
 
-        Corporation ics = new Corporation();
+        Corporation ics_corp = new Corporation();
         for (int i = 0; i < 10; i++) {
-            ics.add(BaseEmloyee.getInstance());
+            ics_corp.add(BaseEmloyee.getInstance());
         }
-        for (BaseEmloyee w : ics.getRegister()) {
-            System.out.println(w.toString());
+        for (BaseEmloyee employee : ics_corp) {
+            System.out.println(employee);
         }
     }
 }

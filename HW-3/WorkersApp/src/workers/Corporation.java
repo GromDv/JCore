@@ -10,10 +10,6 @@ public class Corporation implements Iterable<BaseEmloyee> {
         register.add(x);
     }
 
-    public ArrayList<BaseEmloyee> getRegister() {
-        return register;
-    }
-
     @Override
     public Iterator<BaseEmloyee> iterator() {
         return register.iterator();
